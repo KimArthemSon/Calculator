@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Container-calcu">
+        <div id="Value-display">
+            <h1 id="value"></h1>
+        </div>
+        <div id = "CALCu">
+                <span id="btn" onclick="value.textContent=''">AC</span>
+                <span id="btn" onclick="value.textContent=value.textContent.substring(0, value.textContent.length-1)">DE</span>
+                <span id="btn" onclick="calculate('%')">%</span>
+                <span id="btn" onclick="calculate('/')">/</span>
+                <span id="btn" onclick="calculate(7)">7</span>
+                <span id="btn" onclick="calculate(8)">8</span>
+                <span id="btn" onclick="calculate(9)">9</span>
+                <span id="btn" onclick="calculate('*')">*</span>
+                <span id="btn" onclick="calculate(4)">4</span>
+                <span id="btn" onclick="calculate(5)">5</span>
+                <span id="btn" onclick="calculate(6)">6</span>
+                <span id="btn" onclick="calculate('-')">-</span>
+                <span id="btn" onclick="calculate(1)">1</span>
+                <span id="btn" onclick="calculate(2)">2</span>
+                <span id="btn" onclick="calculate(3)">3</span>
+                <span id="btn" onclick="calculate('+')">+</span>
+                <span id="btn" onclick="calculate(0)">0</span>
+                <span id="btn" onclick="calculate('.')">.</span>
+                <span id="btnEqual" onclick="document.getElementById('value').textContent=(eval(document.getElementById('value').textContent))">=</span>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
